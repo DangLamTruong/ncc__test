@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 150px;
+  background-color: rgba(25, 23, 24, 1);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar__item {
+  border-bottom: 1px solid #5C5C5C;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  height: 44px;
+  position: relative;
+}
+
+.sidebar__item a {
+  position: absolute;
+  width: 33px;
+  height: 19px;
+  left: 16px;
+  top: 14px;
+  color: #AAAAAA;
+}
+
+.sidebar__item:hover {
+  background: #5C5C5C;
+}
+
+.sidebar__item:hover a {
+  color: white;
+
+}
+
+.sidebar__item.active a {
+  color: white;
+}
+
+.container-body {
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-body .body {
+  width: 80%;
+}
+
+
+
+.body .logo {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.container_title {
+  text-align: center;
+}
+
+.container_color {
+  background-color: rgba(239, 239, 239, 1);
+  text-align: center;
+  padding: 38px 0;
+  margin-bottom: 40px;
+}
+
+.container_content {
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: lighter;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 18px;
+  word-break: break-word;
+}
+
+.content {
+  display: flex;
+}
+
+.content_main:nth-child(2) {
+  margin: 0 50px;
+}
+
+.content_main h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 18px;
+}
+
+.content_img {
+  float: left;
+  width: 128px;
+  height: 128px;
+}
+
+.content_img_main {
+  font-size: 16px;
+}
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 78px;
+  width: 100%;
+  border-top: 1px solid #DEDEDE;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3E3E3E;
+  width: 80%;
+  margin-left: 145px;
+}
